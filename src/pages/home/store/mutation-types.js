@@ -1,0 +1,2 @@
+export const SET_STUDENTS = 'HOME/SET_STUDENTS'
+

@@ -1,0 +1,95 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+//@import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import '../../../node_modules/material-design-icons/iconfont/material-icons.css';
+@import "../../../node_modules/@andresouzaabreu/vue-data-table/dist/DataTable.css";
+
+* {
+  font-family: 'Rubik', sans-serif;
+}
+
+.material-icons.md-18 { font-size: 18px }
+.material-icons.md-24 { font-size: 24px }
+.material-icons.md-36 { font-size: 36px }
+.material-icons.md-48 { font-size: 48px }
+
+
+/*
+# Buttons .bt
+*/
+.bt-delete:hover{
+  transition: all 0.2s;
+  color: #fff;
+  background-color: #d91f3d;
+  width: 30px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+.bt-delete {
+  margin:auto; 
+  cursor: pointer;
+  color: #040b14;
+  width: 30px;
+  font-size: 30px;
+  display:flex;
+  position:absolute;
+  align-self: auto;
+}
+.bt-edit:hover{
+   transition: all 0.2s;
+   color: #fff;
+   background-color: #18428f;
+   width: 30px;
+   font-size: 30px;
+   border-radius: 5px;
+}
+.bt-edit{
+  color: #040b14;
+  font-size: 30px;
+  width: 30px;
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+}
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  transition: all 0.5s;
+  background: #040b14;
+  overflow-y: auto;
+}
+
+#header .profile {
+  background-color: #040b14;
+  border-bottom: solid 1px #1a1d22;
+}
+#header .profile img {
+  margin: 15px auto;
+  display: block;
+  width: 150px;
+}
+
+#main {
+  margin-left: 300px;
+}
+
+@media (max-width: 1199px) {
+  #header {
+    left: -300px;
+  }
+
+  #main {
+    margin-left: 0;
+  }
+}
+
+
+
